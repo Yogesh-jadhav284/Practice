@@ -1,0 +1,12 @@
+package Sorting_Comparing;
+
+import java.util.Comparator;
+
+public class LastCharComparision implements Comparator<String> {
+
+    public int compare(String o1, String o2){
+        char lastChar1 = o1.charAt(o1.length()-1);
+        char lastChar2 = o2.charAt(o2.length()-2);
+        return Character.compare(lastChar1, lastChar1);
+    }
+}
